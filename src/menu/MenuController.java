@@ -65,8 +65,8 @@ public class MenuController extends Application {
     }
     @FXML
     private void handleTakeMeBackButtonAction(javafx.event.ActionEvent actionEvent){
-        Stage secondaryStage = (Stage) takeMeBackButton.getScene().getWindow();
-        secondaryStage.close();
+        Stage primaryStage = (Stage) takeMeBackButton.getScene().getWindow();
+        primaryStage.show();
     }
 
     public static void main(String[] args){
